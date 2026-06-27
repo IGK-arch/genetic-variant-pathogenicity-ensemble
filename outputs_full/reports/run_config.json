@@ -1,0 +1,21 @@
+{
+  "data_dir": "/Users/i.o.kartashov/Projects/TECHNOFEST_MED/EG\u0306I\u0307TI\u0307M (TRAIN) SETLERI\u0307",
+  "dataset_files": {
+    "CFTR": "YARISMA_TRAIN_CFTR.csv",
+    "KANSER": "YARISMA_TRAIN_KANSER.csv",
+    "MASTER": "YARISMA_TRAIN_MASTER.csv",
+    "PAH": "YARISMA_TRAIN_PAH.csv"
+  },
+  "fast": false,
+  "folds": 5,
+  "include_optional_models": true,
+  "optional_model_availability": {
+    "catboost": true,
+    "lightgbm": true,
+    "optuna": true,
+    "shap": true
+  },
+  "output_dir": "/Users/i.o.kartashov/Projects/TECHNOFEST_MED/outputs_full",
+  "repeats": 3,
+  "seed": 995380
+}

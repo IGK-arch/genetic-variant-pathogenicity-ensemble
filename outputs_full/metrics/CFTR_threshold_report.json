@@ -1,0 +1,11 @@
+{
+  "best_macro_f1": 0.878021978021978,
+  "best_pathogenic_f1": 0.9560439560439561,
+  "best_pathogenic_precision": 0.9456521739130435,
+  "best_pathogenic_recall": 0.9666666666666667,
+  "best_threshold": 0.4799999999999999,
+  "default_macro_f1": 0.8653820239859857,
+  "default_pathogenic_f1": 0.9502762430939227,
+  "default_pathogenic_precision": 0.945054945054945,
+  "default_pathogenic_recall": 0.9555555555555556
+}

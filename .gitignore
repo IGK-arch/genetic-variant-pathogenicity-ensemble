@@ -1,0 +1,29 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+.venv/
+.venv-ruvego/
+.uv-cache/
+.uv-cache-ruvego/
+
+tmp/
+
+# Local source data and submitted PDR are not part of the public code/results repo.
+*TRAIN*SETLER*/
+RUVEGO_PPR.pdf
+universite-veri-seti.zip
+
+# Keep only the final full-stack artifacts selected for GitHub.
+outputs/
+outputs_full/*
+!outputs_full/metrics/
+!outputs_full/metrics/**
+!outputs_full/reports/
+!outputs_full/reports/**
+!outputs_full/report_figures/
+!outputs_full/report_figures/**
+!outputs_full/figures/
+!outputs_full/figures/**
+!outputs_full/models/
+!outputs_full/models/**

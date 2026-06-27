@@ -1,0 +1,4 @@
+panel,master_reference_rows,panel_rows,overlap_removed_from_master,adversarial_auc,shift_flag_auc_gt_0_6
+KANSER,2685,388,246,0.7316400775595615,True
+PAH,2676,372,255,0.9830407083273061,True
+CFTR,2854,111,77,0.963326325624854,True
