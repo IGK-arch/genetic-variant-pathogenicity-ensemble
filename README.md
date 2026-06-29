@@ -64,6 +64,30 @@ NUMBA_CACHE_DIR=tmp/numba \
   --output-dir outputs_full
 ```
 
+Optuna tuning for the main ensemble:
+
+```bash
+MPLCONFIGDIR=tmp/matplotlib \
+NUMBA_CACHE_DIR=tmp/numba \
+.venv-ruvego/bin/python run_optuna_shap.py \
+  --datasets MASTER KANSER PAH CFTR \
+  --trials 20 \
+  --folds 3 \
+  --repeats 1 \
+  --output-dir outputs_optuna
+```
+
+This tunes:
+
+- LightGBM parameters
+- CatBoost parameters
+- soft-voting weights for `lightgbm`, `catboost`, `hist_gbdt`, `extra_trees`, and `random_forest`
+
+The Optuna objective is threshold-tuned out-of-fold Macro F1. After the best trial is found,
+the script reruns CV for the best configuration, trains a final tuned model, and writes SHAP
+reports for the tuned LightGBM and CatBoost components. Trials for each dataset are compared
+on fixed CV splits so the search optimizes model choices rather than split randomness.
+
 To skip slower diagnostics:
 
 ```bash

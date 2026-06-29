@@ -8,6 +8,7 @@ __pycache__/
 .uv-cache-ruvego/
 
 tmp/
+reports/quicklook_pdr/
 
 # Local source data and submitted PDR are not part of the public code/results repo.
 *TRAIN*SETLER*/
@@ -16,6 +17,7 @@ universite-veri-seti.zip
 
 # Keep only the final full-stack artifacts selected for GitHub.
 outputs/
+outputs_optuna*/
 outputs_full/*
 !outputs_full/metrics/
 !outputs_full/metrics/**
